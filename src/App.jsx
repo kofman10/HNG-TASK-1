@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-    <img className=' absolute w-[40px] h-[40px] right-80 top-[52px]' src={Share} alt="" />
+    <img className='hidden lg:block absolute w-[40px] h-[40px] right-80 top-[52px]' src={Share} alt="" />
     <img className='lg:hidden absolute w-[40px] h-[40px] right-[16px] top-[20px]' src={menu} alt="" />
      <div className="flex flex-col justify-center items-center"> 
      <div className = "h-[88px] w-[88px] rounded-full mt-[64px]">
