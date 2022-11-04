@@ -37,7 +37,7 @@ const Contact = () => {
         </div>
 
      <div className = 'flex mt-[24px] '>
-    <input id='checkbox' name = 'checkbox' type = 'checkbox' className = 'relative mb-5 lg:mb-0'/>
+    <input id='checkbox' name = 'checkbox' type = 'checkbox' className = 'relative mb-3 lg:mb-0'/>
     <p className = 'ml-3  lg:mt-[0px]'>You agree to providing your data to {name} who may contact you. </p>
      </div>
         <button type = 'submit' id='btn__submit' href='/contact' className="text-center bg-blue-600 h-[48px] p-3 w-[343px] lg:w-[720px] rounded-[8px] mt-[32px]  text-white">Send message</button>
