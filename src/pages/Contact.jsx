@@ -40,7 +40,7 @@ const Contact = () => {
     <input id='checkbox' name = 'checkbox' type = 'checkbox'/>
     <p className = 'ml-3 mb-2 lg:mt-[0px]'>You agree to providing your data to {name} who may contact you. </p>
      </div>
-        <button type = 'submit' id='btn__submit' href='/contact' className="text-center bg-blue-600 h-[48px] p-3 w-[343px] lg:w-[720px] rounded-[8px] mt-[32px]  text-white">Send message</button>
+        <button type = 'submit' id='btn__submit' href='/contact' className="text-center bg-blue-600 h-[48px] p-3 w-full lg:w-[720px] rounded-[8px] mt-[32px]  text-white">Send message</button>
      </form>
      </div>
     </div>
