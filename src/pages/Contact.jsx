@@ -16,6 +16,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setFormValues(initialValues)
     setFormErrors(validate(formValues));
   };
 
@@ -49,7 +50,7 @@ const Contact = () => {
       <div>
           <label htmlFor="firstname" className="block text-sm mt-[48px] lg:mt-[24px] font-medium text-gray-700 invalid:outline-red-300">Firstname</label>
           <div className="mt-[6px]">
-            <input id="first_name" name="firstname" type="text"  className="placeholder-gray-500 bg-inherit rounded-md border focus:outline-blue-300 w-full lg:w-[348px] p-2" placeholder = 'Enter your firstname' value={formValues.firstname} onChange = {handleChange} />
+            <input id="first_name" name="firstname" type="text"  className= "placeholder-gray-500 bg-inherit rounded-md border focus:outline-blue-300 w-full lg:w-[348px] p-2" placeholder = 'Enter your firstname' value={formValues.firstname} onChange = {handleChange} />
           </div>
                     <p className = 'text-red-500'>{formErrors.firstname}</p>
 
@@ -72,16 +73,16 @@ const Contact = () => {
          <div>
           <label htmlFor="message" className="block text-sm font-medium text-gray-700 mt-[24px]">Message</label>
           <div className="mt-1">
-            <textarea id="message" name="message" type="text" placeholder = "Send me a message and I'll reply you as soon as possible..." className="placeholder-gray-500 bg-inherit rounded-md border focus:outline-blue-300 w-full lg:w-[720px]  h-20 p-2 rounded-md" value={formValues.message} onChange = {handleChange} ></textarea>
+            <textarea id="message" name="message" type="text" placeholder = "Send me a message and I'll reply you as soon as possible..." className={!formErrors ? "placeholder-gray-500 bg-inherit rounded-md border border-red-300 outline-red-300 w-full lg:w-[720px]  h-20 p-2 rounded-md" : "placeholder-gray-500 bg-inherit rounded-md border focus:outline-blue-300 w-full lg:w-[720px]  h-20 p-2 rounded-md" } value={formValues.message} onChange = {handleChange} ></textarea>
           </div>
           <p className = 'text-red-500'>{formErrors.message}</p>
         </div>
 
      <div className = 'flex mt-[24px] '>
     <input id='checkbox' name = 'checkbox' type = 'checkbox'/>
-    <p className = 'ml-3 mb-2 lg:mt-[0px]'>You agree to providing your data to {name} who may contact you. </p>
+    <label htmlFor = 'checkbox' className = 'ml-3  lg:mt-[0x]'>You agree to providing your data to {name} who may contact you. </label>
      </div>
-        <button type = 'submit' id='btn__submit' href='/contact' className="text-center bg-blue-600 h-[48px] p-3 w-full lg:w-[720px] rounded-[8px] mt-[32px]  text-white">Send message</button>
+        <button type = 'submit' id='btn__submit' href='/' className= "text-center bg-blue-600 h-[48px] p-3 w-full lg:w-[720px] rounded-[8px] mt-[32px]  text-white">Send message</button>
      </form>
      </div>
     </div>
