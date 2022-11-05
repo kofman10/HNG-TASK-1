@@ -25,16 +25,16 @@ const Contact = () => {
   const validate = (values) => {
     const errors = {};
     if (!values.firstname) {
-      errors.firstname = "firstname is required!";
+      errors.firstname = "Firstname is required!";
     }
     if (!values.email) {
       errors.email = "Email is required!";
     } 
      if (!values.lastname) {
-      errors.lastname = "lastname is required!";
+      errors.lastname = "Lastname is required!";
     }
      if (!values.message) {
-      errors.message = "message is required!";
+      errors.message = "Please enter a message";
     }
     
     return errors;
