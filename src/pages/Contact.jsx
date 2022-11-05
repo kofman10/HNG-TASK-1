@@ -19,9 +19,7 @@ const Contact = () => {
     setFormErrors(validate(formValues));
   };
 
-  useEffect(() => {
-   
-  }, [formErrors]);
+
   const validate = (values) => {
     const errors = {};
     if (!values.firstname) {
